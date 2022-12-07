@@ -17,6 +17,10 @@ namespace Estudo1
         {
             return Price * Amount;
         }
+        public void AddAmount(int amount)
+        {
+            Amount = amount + Amount;
+        }
         public double TotaLWeight()
         {
             return Amount * Weight;

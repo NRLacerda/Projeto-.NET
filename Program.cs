@@ -19,6 +19,10 @@ namespace Estudo1 // Note: actual namespace depends on the project name.
             Console.WriteLine("Insira o peso do produto (em Kg).");
             p.Weight = double.Parse(Console.ReadLine());
             Console.WriteLine(p);
+            Console.WriteLine("Insira quantidade a ser adicionada:");
+            int qntd = int.Parse(Console.ReadLine());
+            p.AddAmount(qntd);
+            Console.WriteLine("Dados atualizados" + p);
         }
     }
 }
