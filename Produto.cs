@@ -19,7 +19,11 @@ namespace Estudo1
         }
         public void AddAmount(int amount)
         {
-            Amount = amount + Amount;
+            Amount += amount;
+        }
+        public void RemAmount(int remAmount)
+        {
+            Amount = remAmount - Amount;
         }
         public double TotaLWeight()
         {

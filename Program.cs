@@ -21,7 +21,11 @@ namespace Estudo1 // Note: actual namespace depends on the project name.
             Console.WriteLine(p);
             Console.WriteLine("Insira quantidade a ser adicionada:");
             int qntd = int.Parse(Console.ReadLine());
-            p.AddAmount(qntd);
+            p.AddAmount(qntd); //chama funçaõ q add qntd, passando o parametro 
+            Console.WriteLine("Dados atualizados" + p);
+            Console.WriteLine("Deseja remover alguma quantidade? Se sim informe abaixo:");
+            int qntdDel = int.Parse(Console.ReadLine());
+            p.RemAmount(qntdDel); //chama função q remove quantidade, passando o parametro 
             Console.WriteLine("Dados atualizados" + p);
         }
     }
