@@ -2,7 +2,8 @@
 using System.Globalization;
 
 namespace Estudo1 // Note: actual namespace depends on the project name.
-{
+{ // namespace é tipo como se vc fizesse sua propria dependência, 
+    // seu código pode ser usado da mesma forma q importamos algo no javacsript
     internal class Program
     {
         static void Main(string[] args)
@@ -50,7 +51,7 @@ namespace Estudo1 // Note: actual namespace depends on the project name.
                 int menu = int.Parse(Console.ReadLine());
                 if (menu == 1)
                 {
-
+                    Console.Write("O-o");
                 }
             }
         }
