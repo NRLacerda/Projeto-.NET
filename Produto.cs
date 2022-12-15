@@ -23,7 +23,7 @@ namespace Estudo1
         }
         public void RemAmount(int remAmount)
         {
-            Amount = remAmount - Amount;
+            Amount = Amount - remAmount;
         }
         public double TotaLWeight()
         {
@@ -41,6 +41,15 @@ namespace Estudo1
                 + " Kg."
                 + "Valor total em estoque (R$): "
                 + TotalValueResource().ToString("F2", CultureInfo.InvariantCulture);
+        }
+    }
+    public class Triangulo
+    {
+        public double Largura;
+        public double Altura;
+        public double CalcArea()
+        {
+            return Largura * Altura;
         }
     }
 }
