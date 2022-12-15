@@ -36,7 +36,22 @@ namespace Estudo1 // Note: actual namespace depends on the project name.
             }
             else
             {
-                Console.WriteLine("Finalizado");
+                Console.WriteLine("Entre a os lados do triângulo separados por espaço");
+                int sum = 0;
+                string perimeter = Console.ReadLine();
+                string[] sides = perimeter.Split(" ");
+                foreach (var side in sides)
+                {
+                    sum = Int32.Parse(side) + sum;
+                    Console.WriteLine(sum);
+                }
+                Console.WriteLine("Deseja voltar ao início?");
+                Console.WriteLine("Digite 1 para sim e 0 para não");
+                int menu = int.Parse(Console.ReadLine());
+                if (menu == 1)
+                {
+
+                }
             }
         }
     }
